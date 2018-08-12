@@ -19,6 +19,7 @@ vim "+PluginInstall" "+x" "+x"
 # Compiling YCM with semantic support for C-family languages:
 sudo dnf install automake gcc gcc-c++ kernel-devel cmake
 sudo dnf install python-devel python3-devel
+cp -v ycm_extra_conf.py ~/.ycm_extra_conf.py
 cd ~/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
 ~/.vim/bundle/YouCompleteMe/install.sh --clang-completer
