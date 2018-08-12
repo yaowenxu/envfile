@@ -1,11 +1,11 @@
-# Vim env 
+## Vim env 
 Vim environment settings
 
-# Details
+## Details
 详细的vim 的使用指导：
 [Linux ： Vim 使用与配置](https://www.cnblogs.com/xuyaowen/p/vim_usage.html)
 
-# Files
+## Files
 Vim 配置文件： 
 - vimrc
 
