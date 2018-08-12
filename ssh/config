@@ -1,0 +1,8 @@
+# 设置session复用，在session生命周期内，不需要重复输入密码
+Host *
+    KeepAlive yes
+    ServerAliveInterval 60
+    ControlMaster auto
+    ControlPersist yes
+    ControlPath ~/.ssh/socks/%h-%p-%r
+#配置中 %h-%p-%r, %h表示远程主机名，%p指连接的端口,%r表示登录用户名
