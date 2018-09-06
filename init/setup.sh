@@ -13,7 +13,7 @@ echo "Env"
 # fzf : 命令行下模糊搜索工具，能够交互式智能搜索并选取文件或者内容
 # script/scriptreplay : 终端录制
 # cockpit
-# Jupyter
+# Jupyter https://www.cnblogs.com/xuyaowen/p/fedora-jupyter.html
 # fish 
-
+# 设置 ctrl + alt + T 快捷打开 terminal 的快捷键
 # mac say, pbcopy/pbpaste  : 语音和 Terminal 与 系统粘贴板 通信
