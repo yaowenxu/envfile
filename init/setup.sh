@@ -16,4 +16,6 @@ echo "Env"
 # Jupyter https://www.cnblogs.com/xuyaowen/p/fedora-jupyter.html
 # fish 
 # 设置 ctrl + alt + T 快捷打开 terminal 的快捷键
+# 安装 vnc 进行远程主机访问 https://www.cnblogs.com/xuyaowen/p/vnc-remote-desktop.html
+
 # mac say, pbcopy/pbpaste  : 语音和 Terminal 与 系统粘贴板 通信
