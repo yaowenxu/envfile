@@ -1,8 +1,15 @@
 # 设置session复用，在session生命周期内，不需要重复输入密码
+# 配置中 %h-%p-%r, %h表示远程主机名，%p指连接的端口,%r表示登录用户名
 Host *
     KeepAlive yes
     ServerAliveInterval 60
     ControlMaster auto
     ControlPersist yes
     ControlPath ~/.ssh/socks/%h-%p-%r
-#配置中 %h-%p-%r, %h表示远程主机名，%p指连接的端口,%r表示登录用户名
+
+# 设置 github 连接时的，linux/windows socksv5代理
+Host github.com
+  HostName github.com
+  User git
+  # ProxyCommand nc -v -x localhost:10808 %h %p
+  # ProxyCommand connect -S 127.0.0.1:7890 -a none %h %p
