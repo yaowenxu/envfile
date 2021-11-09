@@ -1,5 +1,6 @@
 # 设置session复用，在session生命周期内，不需要重复输入密码
 # 配置中 %h-%p-%r, %h表示远程主机名，%p指连接的端口,%r表示登录用户名
+# 此配置，不适合在windows下使用, MacOS 和 Linux下，验证有效
 Host *
     KeepAlive yes
     ServerAliveInterval 60
@@ -7,7 +8,8 @@ Host *
     ControlPersist yes
     ControlPath ~/.ssh/socks/%h-%p-%r
 
-# 设置 github 连接时的，linux/windows socksv5代理
+# 设置 github 连接时的，linux/windows socks5 代理
+# 关于代理设置，可以参考：https://www.cnblogs.com/xuyaowen/p/linux-cmdline-http-https-tcp-proxy.html
 Host github.com
   HostName github.com
   User git
