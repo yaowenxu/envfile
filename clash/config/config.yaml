@@ -1,0 +1,9 @@
+# port: 7890
+# socks-port: 7891
+mixed-port: 7890
+allow-lan: true
+bind-address: "0.0.0.0"
+secret: "michael"
+mode: Rule
+log-level: info
+external-controller: 0.0.0.0:7892

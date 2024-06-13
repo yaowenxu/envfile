@@ -1,10 +1,22 @@
-# Environment Files
+## Environment Files
 Linux environment settings
+- [CUDA](./cuda/)
+- [Clash](./clash/)
+- [SSH](./ssh/)
+- [NFS](./nfs/)
 
-## Directories
+### Homebrew
+- MacOS or Linux
+- https://brew.sh/
 
-- vim : vim 环境配置文件和脚本
-
-
----
-保持更新，转载请注明出处。
+### Misc Tools
+- tig
+- gtop
+- gping
+- fzf
+- iperf3
+- slurm
+- fio
+- glances
+- gitalias
+- tmux/tpm
