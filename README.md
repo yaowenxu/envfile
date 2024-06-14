@@ -8,15 +8,13 @@ Linux environment settings
 ### Homebrew
 - MacOS or Linux
 - https://brew.sh/
+- `eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"`
 
 ### Misc Tools
-- tig
-- gtop
-- gping
-- fzf
-- iperf3
-- slurm
-- fio
-- glances
-- gitalias
+- vim/nvim/vundle.vim
+- gitalias/tig
 - tmux/tpm
+- htop/gtop/glances
+- gping/iperf3/slurm
+- fzf
+- fio
