@@ -47,7 +47,7 @@ run '~/.tmux/plugins/tpm/tpm'
 - type this in terminal if tmux is already running : `tmux source ~/.tmux.conf`
 
 ### Misc Tools
-- htop/gtop/btop/glances
+- htop/gtop/btop/dstat/glances
 - iperf3/slurm/gping
 - tmux/tpm/tig
 - fzf/fio
