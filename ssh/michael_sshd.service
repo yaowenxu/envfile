@@ -1,6 +1,7 @@
 [Unit]
-Description=michael-sshd-2024
+Description=Michael SSH Daemon on port 2024
 After=network.target auditd.service
+Wants=network-online.target
 
 [Service]
 ExecStartPre=/usr/sbin/sshd -t
@@ -9,7 +10,9 @@ ExecReload=/usr/sbin/sshd -t
 ExecReload=/bin/kill -HUP $MAINPID
 KillMode=process
 Restart=on-failure
-Type=simple
+RestartSec=5s
+Type=notify
+NotifyAccess=all
 
 [Install]
 WantedBy=multi-user.target
